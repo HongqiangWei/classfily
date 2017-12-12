@@ -1,0 +1,19 @@
+//-----------------
+//最小—最大标准化
+//原始向量长度大于2
+//       Xold - min 
+//Xnew = —————
+//       max -  min
+//-----------------
+void MinMaxNormalize(std::vector<float>& V){
+	//获取最大最小值
+	float max = V[0];
+	float min = V[0];
+	for (size_t i = 1; i < V.size(); i++) {
+		if (V[i] > max) max = V[i];
+		else if (V[i] < min) min = V[i];
+	}
+	//进行标准化
+	for (size_t j = 0; j < V.size(); j++) {
+		V[j] = (V[j] - min) / (max - min);
+	}
