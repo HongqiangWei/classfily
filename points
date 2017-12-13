@@ -1,0 +1,221 @@
+#pragma once
+#ifndef POINTS_H_DEF
+#define POINTS_H_DEF
+//这是一系列点结构体
+//我们可以将它们用于不同场合
+
+struct point3f
+{
+	float x;
+	float y;
+	float z;
+public:
+	point3f() {
+		x = y = z = 0.0f;
+	}
+	point3f(point3f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+	}
+	void to(point3f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+	}
+};
+
+struct point4f
+{
+	float x;
+	float y;
+	float z;
+	float i;
+public:
+	point4f() {
+		x = y = z =i= 0.0f;
+	}
+	point4f(point4f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+		i = p.i;
+	}
+	void to(point4f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+		p.i = i;
+	}
+};
+
+struct point5f
+{
+	float x;
+	float y;
+	float z;
+	float i;
+	float j;
+public:
+	point5f() {
+		x = y = z = i =j= 0.0f;
+	}
+	point5f(point5f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+		i = p.i;
+		j = p.j;
+	}
+	void to(point5f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+		p.i = i;
+		p.j = j;
+	}
+};
+
+struct point6f
+{
+	float x;
+	float y;
+	float z;
+	float i;
+	float j;
+	float k;
+public:
+	point6f() {
+		x = y = z = i = j =k= 0.0f;
+	}
+	point6f(point6f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+		i = p.i;
+		j = p.j;
+		k = p.k;
+	}
+	void to(point6f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+		p.i = i;
+		p.j = j;
+		p.k = k;
+	}
+};
+
+struct point7f
+{
+	float x;
+	float y;
+	float z;
+	float i;
+	float j;
+	float k;
+	float l;
+
+public:
+	point7f() {
+		x = y = z = i = j = k = l= 0.0f;
+	}
+	point7f(point7f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+		i = p.i;
+		j = p.j;
+		k = p.k;
+		l = p.l;
+	}
+	void to(point7f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+		p.i = i;
+		p.j = j;
+		p.k = k;
+		p.l = l;
+	}
+};
+
+struct point8f
+{
+	float x;
+	float y;
+	float z;
+	float i;
+	float j;
+	float k;
+	float l;
+	float m;
+
+public:
+	point8f() {
+		x = y = z = i = j = k = l = m= 0.0f;
+	}
+	point8f(point8f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+		i = p.i;
+		j = p.j;
+		k = p.k;
+		l = p.l;
+		m = p.m;
+	}
+	void to(point8f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+		p.i = i;
+		p.j = j;
+		p.k = k;
+		p.l = l;
+		p.m = m;
+	}
+};
+
+struct point9f
+{
+	float x;
+	float y;
+	float z;
+	float i;
+	float j;
+	float k;
+	float l;
+	float m;
+	float n;
+
+public:
+	point9f() {
+		x = y = z = i = j = k = l = m = n=0.0f;
+	}
+	point9f(point9f& p) {
+		x = p.x;
+		y = p.y;
+		z = p.z;
+		i = p.i;
+		j = p.j;
+		k = p.k;
+		l = p.l;
+		m = p.m;
+		n = p.n;
+
+	}
+	void to(point9f& p) {
+		p.x = x;
+		p.y = y;
+		p.z = z;
+		p.i = i;
+		p.j = j;
+		p.k = k;
+		p.l = l;
+		p.m = m;
+		p.n = n;
+	}
+};
+
+#endif // !POINTS_H_DEF
